@@ -53,7 +53,7 @@ public class MinHashSimilarity {
 	{
 		if (threshold < 0 || threshold > 1)
 		{
-			throw new Exception(String.format("MinHashSimilarity - Illegal threshold: %d", threshold));
+			throw new Exception(String.format("MinHashSimilarity - Illegal threshold: %f", threshold));
 		}
 		
 		if (bands*rows != numHashFunctions)
