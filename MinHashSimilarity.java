@@ -51,7 +51,7 @@ public class MinHashSimilarity {
 	 */
 	public MinHashSimilarity(double threshold, int tokensInWord, int numHashFunctions, int bands, int rows) throws Exception
 	{
-		if (threshold < 0 || threshold > 100)
+		if (threshold < 0 || threshold > 1)
 		{
 			throw new Exception(String.format("MinHashSimilarity - Illegal threshold: %d", threshold));
 		}
